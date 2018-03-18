@@ -12,6 +12,9 @@ spec:
       labels:
         k8s-app: arm-exporter
     spec:
+      securityContext:
+        runAsNonRoot: true
+        runAsUser: 65534
       hostNetwork: true
       containers:
       - image: carlosedp/arm_exporter
@@ -20,3 +23,6 @@ spec:
         - name: http
           containerPort: 9243
           hostPort: 9243
+      tolerations:
+        - effect: NoSchedule
+          operator: Exists

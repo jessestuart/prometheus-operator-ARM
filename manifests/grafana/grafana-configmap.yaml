@@ -24,9 +24,9 @@ data:
 
     [smtp]
     enabled = true
-    host = smtp-server.monitoring.svc:25 
+    host = smtp-server.monitoring.svc:25
     user =
     password =
-    from_address = 'carlosedp@gmail.com'
+    from_address = 'hi@jessestuart.com'
     from_name = Grafana Alert
     skip_verify = true

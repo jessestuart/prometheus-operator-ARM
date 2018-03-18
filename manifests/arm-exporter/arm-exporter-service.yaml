@@ -3,7 +3,6 @@ kind: Service
 metadata:
   namespace: monitoring
   labels:
-    app: arm-exporter
     k8s-app: arm-exporter
   name: arm-exporter
 spec:
@@ -15,4 +14,3 @@ spec:
     protocol: TCP
   selector:
     k8s-app: arm-exporter
-
