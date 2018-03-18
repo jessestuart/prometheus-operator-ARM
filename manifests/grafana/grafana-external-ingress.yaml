@@ -11,7 +11,7 @@ metadata:
     traefik.frontend.redirect.replacement: https://$1
 spec:
   rules:
-  - host: grafana.cloud.carlosedp.com
+  - host: stats.jesses.io
     http:
       paths:
       - path: /

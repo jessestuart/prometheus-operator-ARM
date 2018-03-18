@@ -5,7 +5,7 @@ metadata:
   namespace: monitoring
 spec:
   rules:
-  - host: alertmanager.internal.carlosedp.com
+  - host: alertmanager.internal.jesses.io
     http:
       paths:
       - path: /
